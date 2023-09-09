@@ -1,3 +1,14 @@
+
+# Website Restaurant
+Restaurant is an application for a list of restaurants in all regions of Indonesia that provide menus from abroad or within the country. This application uses the JavaScript programming language and utilizes the React JS library with version 18.2.0, Node JS with version v18.16.1 and Bootstrap v5.2 for frontend development.
+
+## Instal
+The Restaurant website can run locally on your machine. Please download this repository and open it using Visual Studio Code. Then, execute the following commands in the terminal.
+```sh
+cd Restaurant
+npm i
+npm start
+```
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
@@ -68,3 +79,26 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 ### `npm run build` fails to minify
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+
+
+## Fitures Website Restaurant
+- Filter category menu restourant
+- Filter price restourant
+- detail product
+- Responsive website for both desktop and mobile devices
+- Restaurant page
+
+## Tech
+- [Bootstrap](https://getbootstrap.com/) - A CSS framework is a collection of HTML, CSS, and JavaScript templates that enable the rapid and easy creation of responsive websites.
+- [HTML] - Hypertext Markup Language (HTML) is the standard markup language for creating and structuring web pages and applications.
+- [CSS] - Cascading Style Sheets (CSS) is used to control the appearance of elements written in the markup language.
+- [Google Chrome](https://www.google.com/chrome) - Google Chrome is a software that functions to search, access, and display various forms of information.
+- [JavaScript] - Programming languages used in website development to make them more dynamic and interactive.
+- [React JS](https://legacy.reactjs.org/) -  JavaScript library used in the development process of dynamic web applications.
+- [Node JS](https://nodejs.org/en) - a platform created specifically to help develop web-based applications.
+
+## Related Project
+- [`API Restorant`](https://restaurant-api.dicoding.dev/#/)
+
+- [`Demo Restaurant`](https://frontend-dev-muhammad-sony-setiawan.vercel.app/)
+
