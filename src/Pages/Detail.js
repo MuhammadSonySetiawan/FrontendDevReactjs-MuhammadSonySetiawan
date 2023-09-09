@@ -5,21 +5,20 @@ import ReactStars from "react-rating-star-with-type";
 
 function Detail() {
   const [itemResto, setItemResto] = React.useState();
+  const [star, setStar] = React.useState(5);
   const Location = useLocation();
+
   React.useEffect(() => {
     const id = Location.pathname?.split("/")[2];
     axios
       .get(`https://restaurant-api.dicoding.dev//detail/${id}`)
       .then((res) => {
-        console.log(res?.data?.restaurant);
         setItemResto(res?.data?.restaurant);
       })
       .catch((err) => console.log(err, "<<<< error1"));
   }, []);
 
   // rating start
-  const [star, setStar] = React.useState(5);
-
   const onChange = (nextValue) => {
     setStar(nextValue);
   };
@@ -61,11 +60,6 @@ function Detail() {
                   "#002B56",
                   "#002B56",
                   "#002B56",
-                  // "red",
-                  // "orange",
-                  // "#FFCE00",
-                  // "#9177FF",
-                  // "#8568FC",
                 ]}
                 style={{ marginRight: "10px" }}
               />
@@ -82,7 +76,6 @@ function Detail() {
                   {", "}
                 </>
               ))}
-              {/* {itemResto?.categories} */}
             </td>
           </tr>
           <tr>
@@ -134,7 +127,6 @@ function Detail() {
                     {item?.name}
                     <label style={{ marginLeft: "100px" }}>{item?.date}</label>
                   </td>
-                  {/* <td>{item?.date}</td> */}
                 </tr>
                 <tr>
                   <td>
